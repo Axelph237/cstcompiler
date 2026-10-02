@@ -1,8 +1,8 @@
-# Delphi
+# CST Compiler
 
-Delphi is a quantum compiler for High-Level Oracle Synthesis. It takes a high-level specification of a search problem and produces an optimized quantum oracle circuit.
+CST Compiler is a quantum compiler for High-Level Oracle Synthesis. It takes a high-level specification of a search problem and produces an optimized quantum oracle circuit.
 
-Quantum search algorithms (Grover's, QAOA variants) require an oracle that marks solutions to a search problem. The obvious construction wastes ancilla qubits and gate depth. Delphi chooses how to group and schedule clauses so the circuit reuses its qubits, which cuts depth.
+Quantum search algorithms (Grover's, QAOA variants) require an oracle that marks solutions to a search problem. The obvious construction wastes ancilla qubits and gate depth. CST Compiler chooses how to group and schedule clauses so the circuit reuses its qubits, which cuts depth.
 
 The companion package `delphi-interface` turns natural language into the CNF clauses this compiler consumes, and depends on this package.
 
