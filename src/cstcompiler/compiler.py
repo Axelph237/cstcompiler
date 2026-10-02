@@ -73,11 +73,6 @@ class CST:
             ctx=self.ctx
         )
 
-
-
-
-
-
     @staticmethod
     def from_dimacs(dimacs: str, ancilla_budget: int) -> CST:
         var_map = VariableMapping()
