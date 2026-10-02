@@ -58,16 +58,6 @@ The inner loops use two complementary techniques to avoid Python-speed bottlenec
 
 A `NumpyContext` (built once per `grow_cst` call) holds all pre-computed structures and is threaded through every inner call so no work is repeated per node.
 
-## Pipeline status
-
-| Step | Status |
-|---|---|
-| User-LLM interaction for defining clauses | planned |
-| Conversion of high-level language to CNF | **complete** ✅ |
-| HRSE tree synthesis (ASDT algorithm) | **complete** ✅ |
-| CST construction (SeedGrow heuristic) | **complete** ✅ |
-| Mapping CST to optimized oracle circuit | **complete** ✅ |
-
 ## Getting started
 
 `cstcompiler` is a standalone [uv](https://docs.astral.sh/uv/) project. The
